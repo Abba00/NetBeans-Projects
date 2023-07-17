@@ -1,0 +1,83 @@
+CREATE TABLE `csc` (
+  `name` varchar(45) NOT NULL,
+  `identity` varchar(45) NOT NULL,
+  `csc101` int DEFAULT NULL,
+  `csc102` int DEFAULT NULL,
+  `csc201` int DEFAULT NULL,
+  `csc202` int DEFAULT NULL,
+  `csc301` int DEFAULT NULL,
+  `csc302` int DEFAULT NULL,
+  `csc401` int DEFAULT NULL,
+  `csc402` int DEFAULT NULL,
+  `mth101` int DEFAULT NULL,
+  `mth201` int DEFAULT NULL,
+  `phy101` int DEFAULT NULL,
+  `phy201` int DEFAULT NULL,
+  `chm101` int DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `eee` (
+  `name` varchar(45) NOT NULL,
+  `identity` varchar(45) DEFAULT NULL,
+  `eee101` int DEFAULT NULL,
+  `eee102` int DEFAULT NULL,
+  `eee201` int DEFAULT NULL,
+  `eee202` int DEFAULT NULL,
+  `eee301` int DEFAULT NULL,
+  `eee302` int DEFAULT NULL,
+  `eee401` int DEFAULT NULL,
+  `eee402` int DEFAULT NULL,
+  `mth101` int DEFAULT NULL,
+  `mth201` int DEFAULT NULL,
+  `phy101` varchar(45) DEFAULT NULL,
+  `phy201` varchar(45) DEFAULT NULL,
+  `chm101` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `faculty` (
+  `name` varchar(45) NOT NULL,
+  `role` varchar(45) NOT NULL,
+  `department` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `username` varchar(45) NOT NULL,
+  `pin` varchar(45) NOT NULL,
+  `phone` varchar(45) NOT NULL,
+  `photo` longblob NOT NULL,
+  `finger` longblob NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `mee` (
+  `name` varchar(45) NOT NULL,
+  `identity` varchar(45) DEFAULT NULL,
+  `mee101` int DEFAULT NULL,
+  `mee102` int DEFAULT NULL,
+  `mee201` int DEFAULT NULL,
+  `mee202` int DEFAULT NULL,
+  `mee301` int DEFAULT NULL,
+  `mee302` int DEFAULT NULL,
+  `mee401` int DEFAULT NULL,
+  `mee402` int DEFAULT NULL,
+  `mth101` int DEFAULT NULL,
+  `mth201` int DEFAULT NULL,
+  `phy101` int DEFAULT NULL,
+  `phy201` int DEFAULT NULL,
+  `chm101` int DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE `students` (
+  `name` varchar(45) DEFAULT NULL,
+  `dob` varchar(45) DEFAULT NULL,
+  `dept` varchar(45) DEFAULT NULL,
+  `level` varchar(45) DEFAULT NULL,
+  `matric` varchar(45) NOT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `photo` longblob,
+  `finger` longblob,
+  PRIMARY KEY (`matric`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,0 +1,6 @@
+INSTRUCTIONS
+1. Register as a Kitchen Staff and set today's menu.
+2. Register as a finance admin.
+3. Register as a customer and top up balance.
+4. Verify top up from finance admin.
+5. Use customer to place order.

@@ -1,0 +1,10 @@
+CREATE TABLE `imagedata` (
+  `name` varchar(45) NOT NULL,
+  `level` varchar(45) DEFAULT NULL,
+  `sex` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `dept` varchar(45) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `imagedata` longblob
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

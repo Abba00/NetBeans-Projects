@@ -1,0 +1,42 @@
+TABLE 1
+
+CREATE TABLE `accounts` (
+  `name` varchar(45) DEFAULT NULL,
+  `role` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `username` varchar(45) NOT NULL,
+  `pin` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `balance` int DEFAULT NULL,
+  `topup` int DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+TABLE 2
+
+CREATE TABLE `menu` (
+  `food` varchar(45) NOT NULL,
+  `price` int DEFAULT NULL,
+  PRIMARY KEY (`food`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+TABLE 3
+
+CREATE TABLE `accounts` (
+  `name` varchar(45) DEFAULT NULL,
+  `role` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `username` varchar(45) NOT NULL,
+  `pin` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `balance` int DEFAULT NULL,
+  `topup` int DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+
+
+
